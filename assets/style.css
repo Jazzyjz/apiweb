@@ -1,0 +1,26 @@
+
+#button{
+    margin-top: 200px;
+}  
+
+
+body{
+    background-color:#4D6A6D ;
+}
+#div1 { 
+    border:5px solid black;
+    width: 400px;
+    height:400px;
+    padding: 20px 50px 25px 20px; 
+    border-radius: 25px;
+     box-shadow: 5px 1px 20px #333333;
+}
+#div2 { 
+    border:5px solid black;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 25px;
+    border-radius: 15px;
+    box-shadow: -10px 10px 10px #333333;
+}
