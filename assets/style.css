@@ -1,36 +1,45 @@
 
 #button{
     margin-top: 200px;
-}  
-
-
+    position: absolute;
+    z-index: 2;
+    margin-left: 100px;
+    box-shadow: 5px 5px 5px;
+}
+#button2{
+    margin-top: 200px;
+    float: left;
+    margin-left: 100px;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 5px 5px 5px; 
+    }  
 body{
     background-color:#4D6A6D ;
 }
-#div1 { 
-    border:5px solid black;
-    width: 400px;
-    height:400px;
-    padding: 20px 50px 25px 20px; 
-    border-radius: 25px;
-     box-shadow: 5px 1px 20px #333333;
-}
-#div2 { 
-    im
-    border:3px solid black;
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin-right: 50px;
-    border-radius: 15px;
-   
-}
 #sloppyJoe {
-margin-top: 200px;
-height: 200px;
-width: 350px;
-float: left;
-margin-block-start: auto;
-margin-left: ;
+ margin-top: 150px;
+ height: 200px;
+ width: 350px;
+ float: left;
+ position: relative;
+ box-shadow: 5px 5px 5px;
+ border-radius: 8px 8px 8px;
+}
+#sloppyJoe:hover{
+background-image: url("../comfort-food-recipes-64668a179574d.png");
+}
+article{
+    display: flex;
+    display: grid;
+}
+#newsImg{
+    margin-top: 150px;
+ height: 200px;
+ width: 350px;
+ float: left;
+ position: relative;
+ box-shadow: 5px 5px 5px;
+ border-radius: 8px 8px 8px;
 
 }
