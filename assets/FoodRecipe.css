@@ -2,10 +2,27 @@ body{
     background-color: #4D6A6D ;
 }
 #banner{
-    padding-top: 200px;
     width: 100%;
     position: absolute;
-    display: ;
-    background-color: black;
+    padding: 50px;
     color: white;
+    background-color: black;
+    display: flex ;
+    gap: ;
+    flex-direction: column
 }
+#welcome{
+    margin-bottom: ;
+    font-size: large;
+    padding-left: 60px;
+    }
+#par{
+    margin-top: px;
+    font-size: xx-large;
+    padding-left: 60px;
+}
+#darkCard{
+    margin-top: 300px;
+    margin-left: 1400px;
+    }
+  
