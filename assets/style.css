@@ -27,7 +27,8 @@ body{
  border-radius: 8px 8px 8px;
 }
 #sloppyJoe:hover{
-background-image: url("../comfort-food-recipes-64668a179574d.png");
+content: url("../comfort-food-recipes-64668a179574d.png");
+transition-delay: 2s;
 }
 article{
     display: flex;
