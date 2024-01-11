@@ -1,7 +1,12 @@
 
 #button{
     margin-top: 200px;
-}  
+
+}
+#button2{
+    margin-top: 300px;
+    margin-right: 100px;
+    }  
 
 
 body{
@@ -23,14 +28,10 @@ body{
     float: left;
     margin-right: 50px;
     border-radius: 15px;
-   
-}
+   }
 #sloppyJoe {
-margin-top: 200px;
-height: 200px;
-width: 350px;
-float: left;
-margin-block-start: auto;
-margin-left: ;
-
+ margin-top: 150px;
+ height: 200px;
+ width: 350px;
+ float: left;
 }
