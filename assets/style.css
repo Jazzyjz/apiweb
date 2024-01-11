@@ -16,11 +16,21 @@ body{
      box-shadow: 5px 1px 20px #333333;
 }
 #div2 { 
-    border:5px solid black;
+    im
+    border:3px solid black;
     width: 200px;
     height: 200px;
     float: left;
-    margin-right: 25px;
+    margin-right: 50px;
     border-radius: 15px;
-    box-shadow: -10px 10px 10px #333333;
+   
+}
+#sloppyJoe {
+margin-top: 200px;
+height: 200px;
+width: 350px;
+float: left;
+margin-block-start: auto;
+margin-left: ;
+
 }
