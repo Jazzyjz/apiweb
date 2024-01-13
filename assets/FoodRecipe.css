@@ -23,6 +23,15 @@ body{
 }
 #darkCard{
     margin-top: 300px;
-    margin-left: 1400px;
+    float: inline-end;
     }
+#scrollBox{
+  
+   padding-top: 250px;
+    justify-content: ;
+   gap: 50px;
+  
+    
+}
+
   
