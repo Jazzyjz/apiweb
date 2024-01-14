@@ -12,53 +12,62 @@
     </title>
 </head>
 <body>
+  <!-- nav bar -->
     <nav class="navbar bg-body-tertiary" data-bs-theme= "dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-             NewSite
+            <img src="./comfort-food-recipes-64668a179574d.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+               Newspage 
           </a>
         </div>
       </nav>
 
-      <div class="card">
+      <!-- welcome line -->
+
+      <div class="card" id="welcome">
         <div class="card-body">
-          welcome get your news!
+          Welcome User!
         </div>
       </div>
 
+      <!-- scroll -->
+
+      <div id="mainpage">
+
       <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">News News News</a>
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">First</a>
+            <a class="nav-link" href="#scrollspyHeading1">Finance</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+            <a class="nav-link" href="#scrollspyHeading2">Tech</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading3">Finance</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading4">Tech</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading5">Entertainment</a></li>
             </ul>
           </li>
         </ul>
       </nav>
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-        <h4 id="scrollspyHeading1">First heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading2">Second heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading3">Third heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading4">Fourth heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading5">Fifth heading</h4>
-        <p>...</p>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0" id="scrollpage">
+        <h4 id="scrollspyHeading1">Finance</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At itaque, quibusdam fugit neque ut quos hic dignissimos laborum tempora beatae et obcaecati, dicta tempore provident eos, eaque aut autem laboriosam?</p>
+        <h4 id="scrollspyHeading2">Tech</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione error adipisci nulla facere, voluptatibus, in excepturi esse iure debitis et modi aperiam numquam nisi dolore tempore. Cupiditate, vitae sapiente?</p>
+        <h4 id="scrollspyHeading3">Entertainment </h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi reiciendis vero, sint distinctio ipsam exercitationem! Voluptatibus cumque totam ratione aliquam tempora tenetur doloremque corporis nihil molestiae eius. Modi, vel magni.</p>
+        <h4 id="scrollspyHeading4">Health</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti earum cupiditate obcaecati animi repellat, eius dolor minima velit minus et quibusdam. Accusantium sapiente, excepturi aperiam minus error maiores temporibus blanditiis.</p>
+        <h4 id="scrollspyHeading5">Weather</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nemo modi optio deleniti fuga illo, quas beatae exercitationem mollitia officiis soluta ullam rerum quod dolorem temporibus libero consectetur ad eos?</p>
       </div>
+
+      <!-- news boxes -->
 
       <div class="container">
         <div class="card" style="width: 18rem;">
@@ -81,6 +90,7 @@
             </div>
           </div>
       </div>
+    </div> 
       <script src="./assets/news.js"></script>
 </body>
 </html>
