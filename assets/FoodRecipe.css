@@ -24,12 +24,14 @@ body{
 #darkCard{
     margin-top: 300px;
     float: inline-end;
+    margin-right: 50px;
     }
 #scrollBox{
   
    padding-top: 250px;
-    justify-content: ;
-   gap: 50px;
+    border:solid 3px gray;
+    outline: border; 
+    width: 1250px;
   
     
 }
