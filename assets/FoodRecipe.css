@@ -32,16 +32,20 @@ body{
 #scrollBox{
     overflow-y: scroll;
    padding-top: 250px;
+
+    
     outline: border; 
     width: auto;
     height: 1000px;
-    scrollbar-color: #4D6A6D black ;    
+    scrollbar-color: #4D6A6D black ;
+    
+    }
+
 }
 #foot{
     border-top: solid black 1px;
     text-align: center;
 }
-
 
 
 
