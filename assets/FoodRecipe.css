@@ -32,6 +32,7 @@ body{
 #scrollBox{
     overflow-y: scroll;
    padding-top: 250px;
+
     
     outline: border; 
     width: auto;
@@ -39,9 +40,10 @@ body{
     scrollbar-color: #4D6A6D black ;
     
     }
-footer{
-    border-top: black 1px;
-    padding-top: 100px;
+
+}
+#foot{
+    border-top: solid black 1px;
     text-align: center;
 }
 
