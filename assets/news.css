@@ -1,21 +1,26 @@
 body{
     background-color:#4D6A6D ;
 }
-.container{
-    display: flex;
+/* .container{
    
+   float: inline-end;
     gap: 30px;
+
     /* padding: 60px;
     margin-left: 700px; */
+
    
-}
+
 #welcome{
     box-shadow: 3px 3px 3px 3px;
-    margin-top: 40px;
+     margin-top: 40px;
     margin-bottom: 50px;
-    margin-left: 295px;
+     margin-left: 30px;
     
-    margin-right: 410px; 
+    margin-right: 10px;
+    max-width: 500px;
+    
+
 }
 #navbar-example2{
     /* margin-left: 30px;
@@ -26,7 +31,28 @@ body{
     /* margin-right: 900px;
     margin-left: 30px; */
     box-shadow: 9px 9px 9px;
+    overflow-y: scroll;
+    max-width: 7150px;
+    max-height: 550px;
+    
 }
 #mainpage{
+    float: left;
+    margin-left: 50px;
+}
+#boxes{
+    float: inline-end;
+}
+#main{
     display: flex;
+    justify-items: start;
+    gap: 30px;
+}
+#rectangle{
+    float: inline-end;
+    
+   
+}
+.card{
+    margin: 10px;
 }
