@@ -2,3 +2,8 @@ body{
    background-color: #22223b; 
    color: white;
 }
+#game{
+ display: flex;
+ justify-content: space-evenly;
+ margin-top: 100px;
+}
