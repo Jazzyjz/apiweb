@@ -24,7 +24,7 @@ fetch(apiUrl)
         var carddata1 = data.cards[0].image;
         card1.setAttribute('src',carddata1) ;
         //append
-        var present = document.querySelector('#scoreboard');
+        var present = document.querySelector('#game');
         present.appendChild(card1);
 
         //create 
@@ -33,11 +33,8 @@ fetch(apiUrl)
         var carddata2 = data.cards[1].image;
         card2.setAttribute('src',carddata2) ;
         //append
-        var present = document.querySelector('#scoreboard');
+        
         present.appendChild(card2);
-
-            
-
 
 
     }
