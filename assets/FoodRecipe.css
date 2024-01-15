@@ -4,7 +4,7 @@ body{
 #banner{
     width: 100%;
     position: absolute;
-    padding: 50px;
+    padding: 30px;
     color: white;
     background-color: black;
     display: flex ;
@@ -25,15 +25,28 @@ body{
     margin-top: 300px;
     float: inline-end;
     margin-right: 50px;
+    display: flex;
+    margin-left:  30px;
+
     }
 #scrollBox{
-  
+    overflow-y: scroll;
    padding-top: 250px;
     border:solid 3px gray;
     outline: border; 
-    width: 1250px;
+    width: auto;
+    height: 1000px;
+    scrollbar-color: #4D6A6D black ;
+    
+    
+    
+
+    
   
     
 }
+
+
+
 
   
