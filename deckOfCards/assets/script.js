@@ -19,13 +19,26 @@ fetch(apiUrl)
        
 
         //create 
-        var suit1 = document.createElement('img');
+        var card1 = document.createElement('img');
         //inject
-        var suitdata1 = data.cards[0].image;
-        suit1.setAttribute('src',suitdata1) 
+        var carddata1 = data.cards[0].image;
+        card1.setAttribute('src',carddata1) ;
         //append
         var present = document.querySelector('#scoreboard');
-        present.appendChild(suit1);
+        present.appendChild(card1);
+
+        //create 
+        var card2 = document.createElement('img');
+        //inject
+        var carddata2 = data.cards[1].image;
+        card2.setAttribute('src',carddata2) ;
+        //append
+        var present = document.querySelector('#scoreboard');
+        present.appendChild(card2);
+
+            
+
+
 
     }
 
