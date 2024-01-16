@@ -1,15 +1,19 @@
 
  var apiUrl = 'https://deckofcardsapi.com/api/deck/new/draw/?count=4';
+ var apiUrl1 = 'https://deckofcardsapi.com/api/deck/new/draw/?count=1';
  var startbtn = document.querySelector('#button3')
+ var Hit = document.querySelector('#button1')
+ var Stay =document.querySelector('#button2')
 
 
  startbtn.addEventListener('click',getCards)
+ Hit.addEventListener('click',addCard)
 //create function
 
 
 function getCards(){
     //startbtn.hidden=true;
-// fetch api
+// fetch api can be different
 fetch(apiUrl)
     .then(function(response){
         console.log(response.status);
@@ -57,30 +61,49 @@ fetch(apiUrl)
         console.log( Number(cardvalue1) +  Number(cardvalue2));
         var total = Number(cardvalue1) +  Number(cardvalue2);
         function cap(){
-                switch(total=21){
-                    case total < 21 :
-                        console.log('So Close')
-                        break;
-                    case  total > 21: 
-                        console.log('Too Far Buddy')
-                        break;
-                   default:
-                            console.log('win') ;
-                            break;   
+              if(total == 21){
+                console.log('you win');
+              }else if(total>21){
+                console.log('you lose');
+              }else if(total<21){
+                console.log('Hit or Stay');
+              }
+              else{
+                    console.log('not working');
                 }
-                cap()
             }
-            
+            cap()
         }
         sum()
           
         })
+    }
+        function addCard(){
+        
+        fetch(apiUrl1)
+            .then(function(response){
+                console.log(response.status);
+                if(response.status !== 200){
+                   console.log(response.status);
+                }
+                return response.json();
+             })
+             .then(function(data){
+                console.log(data);
+
+                var newCard = document.createElement('img');
+                var newcard1 = data.cards[0].image;
+        newCard.setAttribute('src',newcard1) ; 
+         var present = document.querySelector('#game');
+         present.appendChild(newCard);
+             })
+
+            }
        
 
 
 
 
-}
 
 
 
