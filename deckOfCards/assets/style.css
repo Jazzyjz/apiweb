@@ -7,3 +7,22 @@ body{
  justify-content: space-evenly;
  margin-top: 100px;
 }
+#button1{
+   
+   
+   flex-direction: row;
+   margin-top: 50px;
+   margin-left: 300px;   
+   }
+   #button2{
+    float: right;
+   margin-right: 300px;
+   margin-top: 50px;
+      
+   }
+   #button3{
+      margin-left: 730px;
+      padding: 30px;
+      font-size: xx-large;
+  }
+  
