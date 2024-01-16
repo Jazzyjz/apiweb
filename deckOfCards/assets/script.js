@@ -1,6 +1,6 @@
 
 
-var apiUrl = 'https://deckofcardsapi.com/api/deck/new/draw/?count=2';
+var apiUrl = 'https://deckofcardsapi.com/api/deck/new/draw/?count=4';
 //create function
 function getCards(){
     
@@ -37,10 +37,9 @@ fetch(apiUrl)
         present.appendChild(card2);
 
 
+
+
     }
-
-
-
 )
 
 }
