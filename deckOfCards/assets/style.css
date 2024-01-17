@@ -9,7 +9,7 @@ body{
 }
 #button1{
    
-   
+   font-size: larger;
    flex-direction: row;
    margin-top: 50px;
    margin-left: 300px;   
@@ -18,11 +18,22 @@ body{
     float: right;
    margin-right: 300px;
    margin-top: 50px;
-      
+      font-size: larger;
    }
    #button3{
-      margin-left: 730px;
+      margin-left: 850px;
       padding: 30px;
       font-size: xx-large;
   }
-  
+  #dealers{
+   display:flex;
+   justify-content: space-evenly;
+  }
+  h1{
+   display:inline;
+   padding-left: 30px;
+  }
+  h4{
+   display:inline;
+   padding-left: 30px;
+  }

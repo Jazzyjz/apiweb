@@ -1,6 +1,6 @@
  //variables
- var apiUrl = 'https://deckofcardsapi.com/api/deck/new/draw/?count=1';
- var apiUrl1 = 'https://deckofcardsapi.com/api/deck/new/draw/?count=2';
+ var apiUrl = 'https://deckofcardsapi.com/api/deck/new/draw/?count=2';
+ var apiUrl1 = 'https://deckofcardsapi.com/api/deck/new/draw/?count=1';
  var startbtn = document.querySelector('#button3');
  var Hit = document.querySelector('#button1');
  var Stay =document.querySelector('#button2');
@@ -15,8 +15,8 @@
 
 
 async function getCards(){
-fetch(apiUrl1)
-const response = await fetch(apiUrl1);
+fetch(apiUrl)
+const response = await fetch(apiUrl);
 const data = await response.json();
 return data;
 }
@@ -29,7 +29,6 @@ async function getCard(){
   }
 async function starGame (){
     const grab = await getCards();
-
         //create 
         var card1 = document.createElement('img');
         //inject
@@ -38,8 +37,6 @@ async function starGame (){
          //append
          var present = document.querySelector('#game');
          present.appendChild(card1);
-       
-
         //create 
         var card2 = document.createElement('img');
         //inject
@@ -67,6 +64,7 @@ async function starGame (){
      newSum(thirdCard)
      result()
          };
+         
         
     // function for calculating sum 
    async function sum(cardvalue1,cardvalue2){
@@ -87,6 +85,8 @@ async function starGame (){
 
     console.log(x + y)
    }
+   
+   
    // function for evaluating score
    function rules(total){
           if(total == 21){
