@@ -1,6 +1,6 @@
  //variables
- var apiUrl = 'https://deckofcardsapi.com/api/deck/new/draw/?count=1';
- var apiUrl1 = 'https://deckofcardsapi.com/api/deck/new/draw/?count=2';
+ var apiUrl = 'https://deckofcardsapi.com/api/deck/new/draw/?count=2';
+ var apiUrl1 = 'https://deckofcardsapi.com/api/deck/new/draw/?count=1';
  var startbtn = document.querySelector('#button3');
  var Hit = document.querySelector('#button1');
  var Stay =document.querySelector('#button2');
@@ -8,28 +8,28 @@
 
 //event listeners
  startbtn.addEventListener('click',starGame);
- Hit.addEventListener('click',addCard);
+ 
  Stay.addEventListener('click', displayDeal);
 
 //create start function
 
 
 async function getCards(){
-fetch(apiUrl1)
-const response = await fetch(apiUrl1);
+fetch(apiUrl)
+const response = await fetch(apiUrl);
 const data = await response.json();
 return data;
 }
 
 async function getCard(){
-  fetch(apiUrl)
-  const response = await fetch(apiUrl);
+  fetch(apiUrl1)
+  const response = await fetch(apiUrl1);
   const data = await response.json();
   return data;
   }
 async function starGame (){
     const grab = await getCards();
-
+    console.log(grab)
         //create 
         var card1 = document.createElement('img');
         //inject
@@ -38,8 +38,6 @@ async function starGame (){
          //append
          var present = document.querySelector('#game');
          present.appendChild(card1);
-       
-
         //create 
         var card2 = document.createElement('img');
         //inject
@@ -48,46 +46,35 @@ async function starGame (){
         //append
       present.appendChild(card2);
       var cardvalue1 = grab.cards[0].value;
-        var cardvalue2 = grab.cards[1].value;}
+        var cardvalue2 = grab.cards[1].value;
+             sum(cardvalue1,cardvalue2)
+             Hit.addEventListener('click',addCard);
+
+        async function addCard(){
+          const grab = await getCard();
+                    var newCard = document.createElement('img');
+                    var newcard1 = grab.cards[0].image;
+                    var thirdCard = grab.cards[0].value;
+                    var total1 = Number(thirdCard)
+            newCard.setAttribute('src',newcard1) ; 
+             var present = document.querySelector('#game');
+             present.appendChild(newCard);
+             console.log(grab)
+             sum(cardvalue1,cardvalue2,total1)
+                 };
+      }
         
       // sum(cardvalue1,cardvalue2)};
       
 // function to add card on hit button 
-    
- async function addCard(){
-  const grab = await getCard();
-            var newCard = document.createElement('img');
-            var newcard1 = grab.cards[0].image;
-            var thirdCard = grab.cards[0].value;
-    newCard.setAttribute('src',newcard1) ; 
-     var present = document.querySelector('#game');
-     present.appendChild(newCard);
-     console.log(grab)
-     
-     newSum(thirdCard)
-     result()
-         };
+async function sum(cardvalue1,cardvalue2,total1){
+  console.log(Number(cardvalue1)+ Number(cardvalue2));
+  
+  var total = Number(cardvalue1) +  Number(cardvalue2) + Number(total1); 
+  console.log(total);        
+        }; 
         
-    // function for calculating sum 
-   async function sum(cardvalue1,cardvalue2){
-    console.log( Number(cardvalue1) +  Number(cardvalue2));
-    
-    var total = Number(cardvalue1) +  Number(cardvalue2);
-    rules(total)
-    result(total)
-   }
-
-   async function newSum(){
-    var total1 = Number(thirdCard);
-    result(total1);
-   }
-   function result(total,total1){
-    var x = total;
-    var y = total1;
-
-    console.log(x + y)
-   }
-   // function for evaluating score
+  
    function rules(total){
           if(total == 21){
             console.log('you win');
